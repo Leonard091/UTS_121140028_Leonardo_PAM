@@ -12,6 +12,6 @@
         android:src="@drawable/baseline_cruelty_free_24"
         android:layout_centerInParent="true"
         android:id="@+id/iv_note"
-        />
+        android:importantForAccessibility="no" />
 
 </RelativeLayout>

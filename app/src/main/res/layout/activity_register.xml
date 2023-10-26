@@ -14,7 +14,8 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:hint="@string/regis_username"
-        android:inputType="text" />
+        android:inputType="text"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/passwordEditText"
@@ -22,50 +23,54 @@
         android:layout_height="48dp"
         android:hint="@string/regis_pass"
         android:inputType="textPassword"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/gitEditText"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:hint="@string/profile_git"
+        android:hint="@string/regis_git"
         android:inputType="text"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/nikEditText"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:hint="NIK"
+        android:hint="@string/regis_nik"
         android:inputType="text"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/emailEditText"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:hint="Email"
+        android:hint="@string/regis_email"
         android:inputType="textEmailAddress"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/registerButton"
-        android:layout_width="match_parent"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:text="Register"
+        android:text="@string/register"
         android:layout_marginTop="16dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="sudah punya akun?"
+        android:text="@string/regis_message"
         android:layout_marginTop="10dp"
         />
 
     <Button
         android:id="@+id/loginButton"
-        android:layout_width="match_parent"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:text="Login"
+        android:text="@string/login"
         android:layout_marginTop="8dp"/>
 </LinearLayout>

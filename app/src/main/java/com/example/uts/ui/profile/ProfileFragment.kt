@@ -1,4 +1,4 @@
-package com.example.uts.ui.dashboard
+package com.example.uts.ui.profile
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -11,19 +11,15 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.fragment.findNavController
 import com.example.uts.LoginActivity
-import com.example.uts.MainActivity
-import com.example.uts.databinding.FragmentDashboardBinding
 import com.example.uts.R
+import com.example.uts.databinding.FragmentProfileBinding
 
-class DashboardFragment : Fragment() {
+class ProfileFragment : Fragment() {
 
-    private var _binding: FragmentDashboardBinding? = null
+    private var _binding: FragmentProfileBinding? = null
     private val user = User("user_name", "github_user", "12345678", "user@email.com")
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     @SuppressLint("SetTextI18n")
@@ -32,14 +28,14 @@ class DashboardFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val dashboardViewModel =
-            ViewModelProvider(this).get(DashboardViewModel::class.java)
+        val profileViewModel =
+            ViewModelProvider(this).get(ProfileViewModel::class.java)
 
-        _binding = FragmentDashboardBinding.inflate(inflater, container, false)
+        _binding = FragmentProfileBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_dashboard, container, false)
+        val view = inflater.inflate(R.layout.fragment_profile, container, false)
 
         // Inisialisasi tampilan dan perbarui dengan data pengguna
         val profileInitial = view.findViewById<TextView>(R.id.profileInitial)
