@@ -2,4 +2,30 @@
     <string name="app_name">UTS</string>
     <string name="title_home">Home</string>
     <string name="title_profile">Profil</string>
+    <string name="profile_email">Email: user@email.com</string>
+    <string name="profile_git">GitHub Username: github_user</string>
+    <string name="profile_A">A</string>
+    <string name="profile_username">Username: user_name</string>
+    <string name="profile_nik">NIK: 12345678</string>
+    <string name="no_result">Tidak ada hasil</string>
+
+    <string name="regis_username">Username</string>
+    <string name="regis_pass">Password</string>
+    <string name="regis_git">PGithub Username</string>
+<!--    <string name="regis_username">Email: user@email.com</string>-->
+<!--    <string name="regis_username">GitHub Username: github_user</string>-->
+<!--    <string name="regis_username">A</string>-->
+<!--    <string name="regis_username">Username: user_name</string>-->
+<!--    <string name="regis_username">NIK: 12345678</string>-->
+<!--    <string name="regis_username">Tidak ada hasil</string>-->
+<!--    <string name="regis_username">UTS</string>-->
+
+<!--    <string name="title_home">Home</string>-->
+<!--    <string name="title_profile">Profil</string>-->
+<!--    <string name="profile_email">Email: user@email.com</string>-->
+<!--    <string name="profile_git">GitHub Username: github_user</string>-->
+<!--    <string name="profile_A">A</string>-->
+<!--    <string name="profile_username">Username: user_name</string>-->
+<!--    <string name="profile_nik">NIK: 12345678</string>-->
+<!--    <string name="no_result">Tidak ada hasil</string>-->
 </resources>

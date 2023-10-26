@@ -1,13 +1,19 @@
 package com.example.uts.ui.dashboard
 
 import android.annotation.SuppressLint
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import com.example.uts.LoginActivity
+import com.example.uts.MainActivity
 import com.example.uts.databinding.FragmentDashboardBinding
 import com.example.uts.R
 
@@ -51,6 +57,33 @@ class DashboardFragment : Fragment() {
         email.text = "Email: ${user.email}"
 
         return view
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // Inisialisasi tombol logout
+        val btnLogout = view.findViewById<Button>(R.id.btnLogout)
+        btnLogout.setOnClickListener {
+            // Lakukan aksi logout
+            logout()
+        }
+    }
+
+    private fun logout() {
+        // Hapus informasi login pengguna
+        // Misalnya, jika Anda menggunakan SharedPreferences:
+        val sharedPreferences = requireActivity().getSharedPreferences("MyAppPreferences", Context.MODE_PRIVATE)
+        with(sharedPreferences.edit()) {
+            remove("username")
+            remove("password")
+            apply()
+        }
+
+        val intent = Intent(activity, LoginActivity::class.java)
+        startActivity(intent)
+
+        activity?.finish()
     }
 
     override fun onDestroyView() {

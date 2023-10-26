@@ -44,6 +44,6 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun saveLoggedInState() {
-        // Anda harus mengimplementasikan metode ini untuk menyimpan ke DataStore Preference
+
     }
 }
