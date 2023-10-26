@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "627013723854",
+    "project_id": "uts-121140028-leonardo-cd543",
+    "storage_bucket": "uts-121140028-leonardo-cd543.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627013723854:android:e6d75d762af0b1f399d29f",
+        "android_client_info": {
+          "package_name": "com.example.uts"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCseaodUKjvAOgIcqEh9j2Q5qcSJxJUx6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
